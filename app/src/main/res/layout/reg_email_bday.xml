@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.mobile.yum.registration.reg_BdayFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/email_directive"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/email_directive"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/email_prompt"
+        android:layout_below="@+id/email_directive"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:text="@string/email_prompt"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_below="@+id/email_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="@string/email"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_below="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/edittext_bottom_line"
+        android:inputType="textPersonName"
+        android:ems="10"
+        />
+
+    <TextView
+        android:id="@+id/bday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="@string/bday"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        />
+
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:text="@string/cont"
+        />
+
+</RelativeLayout>
