@@ -77,7 +77,7 @@ public class ContactDatabaseHelper extends SQLiteOpenHelper {
         String command = "DROP TABLE IF EXISTS " + ContactDBContract.ContactDBEntry.TABLE_NAME;
 //        String command1 = "DROP TABLE IF EXISTS " + ContactDBContract.UserSelections.TABLE_NAME;
 
-  //      db.execSQL(command1);
+  //rest      db.execSQL(command1);
         db.execSQL(command);
         onCreate(db);
     }
