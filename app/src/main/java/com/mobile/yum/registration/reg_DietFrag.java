@@ -67,13 +67,13 @@ public class reg_DietFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.reg_email_bday, container, false);
+        View v = inflater.inflate(R.layout.diet_weight, container, false);
 
-        Button continueButton = (Button) v.findViewById(R.id.continue_button);
+        Button doneButton = (Button) v.findViewById(R.id.done_button);
         final EditText editText = (EditText) v.findViewById(R.id.editText);
         final EditText editText2 = (EditText) v.findViewById(R.id.editText2);
 
-        continueButton.setOnClickListener(new View.OnClickListener() {
+        doneButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -81,7 +81,7 @@ public class reg_DietFrag extends Fragment {
                 weight =  Integer.parseInt(editText2.getText().toString());
 
                 _activity._reg_contact.setWeight(weight);
-                _activity.switchFrag("reg_Pass");
+                //_activity.switchFrag("reg_Pass");
 
             }
         });

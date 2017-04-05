@@ -47,7 +47,7 @@ public class Contact {
     public void setWeight(int weight){this.weight = weight;}
 
     public void setBirthday(int year, int month, int day){
-        if (birthday.length == 0){
+        if (birthday == null){
             birthday = new int[3];
         }
         birthday[0] = year;
