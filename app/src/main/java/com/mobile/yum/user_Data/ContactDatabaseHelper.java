@@ -31,15 +31,15 @@ public class ContactDatabaseHelper extends SQLiteOpenHelper {
         command += ContactDBContract.ContactDBEntry.COLUMN_NAME_B_MONTH + " INTEGER";
         command += ContactDBContract.ContactDBEntry.COLUMN_NAME_B_DAY + " INTEGER";
         command += ")";
-
+/*
         String command2 = "CREATE TABLE " + ContactDBContract.UserSelections.TABLE_NAME + " (";
         command2 += ContactDBContract.ContactDBEntry._ID + " INTEGER PRIMARY KEY,";
         command2 += ContactDBContract.UserSelections.COLUMN_NAME_CUISINE + " TEXT,";
         command2 += ContactDBContract.UserSelections.COLUMN_NAME_RESTRICT+ " TEXT,";
         command2 += ")";
-
+*/
         db.execSQL(command);
-        db.execSQL(command2);
+      //  db.execSQL(command2);
 
         // Temporarily populate the database
         ContentValues values = new ContentValues();
@@ -52,7 +52,7 @@ public class ContactDatabaseHelper extends SQLiteOpenHelper {
         values.put(ContactDBContract.ContactDBEntry.COLUMN_NAME_B_DAY, 10);
 
         db.insert(ContactDBContract.ContactDBEntry.TABLE_NAME, null, values);
-
+/*
         ContentValues values1 = new ContentValues();
         values1.put(ContactDBContract.UserSelections.COLUMN_NAME_CUISINE, "Italian");
         values1.put(ContactDBContract.UserSelections.COLUMN_NAME_CUISINE, "Vietnamese");
@@ -67,7 +67,7 @@ public class ContactDatabaseHelper extends SQLiteOpenHelper {
         values1.put(ContactDBContract.UserSelections.COLUMN_NAME_RESTRICT, "Nut Allergy");
 
         db.insert(ContactDBContract.UserSelections.TABLE_NAME, null, values1);
-
+*/
 
         Log.v("Contact Manager", "Populating database");
     }
@@ -75,9 +75,9 @@ public class ContactDatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Delete the database and the recreate it
         String command = "DROP TABLE IF EXISTS " + ContactDBContract.ContactDBEntry.TABLE_NAME;
-        String command1 = "DROP TABLE IF EXISTS " + ContactDBContract.UserSelections.TABLE_NAME;
+//        String command1 = "DROP TABLE IF EXISTS " + ContactDBContract.UserSelections.TABLE_NAME;
 
-        db.execSQL(command1);
+  //      db.execSQL(command1);
         db.execSQL(command);
         onCreate(db);
     }
