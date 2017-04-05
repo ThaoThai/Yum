@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fruit"
+    tools:context="thaothai.example.com.recipefinder.RecipeMainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Reciperfect!"
+        android:id="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="150px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/picked"
+        android:layout_height="wrap_content"
+        android:textColor= "#000"
+        android:text="TYPE IN YOUR PREFERENCES"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:textSize="60px"/>
+
+
+    <Button
+        android:text="SEARCH"
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#d21f3c"
+        android:textColor="#fff"
+        android:textSize="40px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:id="@+id/exclude"
+        android:hint="EXCLUDE INGREDIENT"
+        android:layout_marginTop="21dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColorHint="#ffc30f"
+        android:backgroundTint="#ffc30f"
+        android:textColor="#ffc30f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picked"
+        />
+    <EditText
+        android:id="@+id/include"
+        android:textColorHint="#e2c9ed"
+        android:hint="INCLUDE INGREDIENT"
+        android:backgroundTint="#e2c9ed"
+        android:layout_marginTop="21dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#e2c9ed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/exclude"
+        android:layout_below="@+id/picked"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/exclude"
+        android:gravity="center">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/responseView"
+                android:layout_centerInParent="true"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
