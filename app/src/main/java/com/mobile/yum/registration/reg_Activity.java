@@ -8,15 +8,12 @@ import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
 import com.mobile.yum.R;
 import com.mobile.yum.user_Data.Contact;
 import com.mobile.yum.user_Data.ContactDBContract;
 import com.mobile.yum.user_Data.ContactDatabaseHelper;
-
-import java.util.ArrayList;
 
 
 /**
@@ -94,8 +91,8 @@ public class reg_Activity extends AppCompatActivity{
         }
 
         FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction().add(R.id.initialactivity, _reg_welcomeFrag).commit();
-
+       // fm.beginTransaction().add(R.id.initialactivity, _reg_welcomeFrag).commit();
+        fm.beginTransaction().add(R.id.initialactivity, _regCuisineFrag).commit();
     }
 
     public void switchFrag(String newFrag){

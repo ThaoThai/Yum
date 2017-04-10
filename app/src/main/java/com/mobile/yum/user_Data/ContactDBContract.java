@@ -33,4 +33,6 @@ public final class ContactDBContract {
         public static final String COLUMN_NAME_CUISINE = "cuisines";
     }
 
+
+
 }

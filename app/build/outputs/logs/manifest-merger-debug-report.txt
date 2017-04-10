@@ -69,6 +69,7 @@ ADDED from C:\Users\Sean\AndroidStudioProjects\Yum\app\src\main\AndroidManifest.
 		ADDED from C:\Users\Sean\AndroidStudioProjects\Yum\app\src\main\AndroidManifest.xml:24:19-47
 uses-sdk
 INJECTED from C:\Users\Sean\AndroidStudioProjects\Yum\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sean\.android\build-cache\076c5c88365485a5eaa5bf30524f8b0f9fb85f3c\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sean\.android\build-cache\7fd37b12bcfd977bf4381d3131f4d1667875547c\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sean\.android\build-cache\ba469e0513f9e95c6aacb2fb4126b375e16c21db\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sean\.android\build-cache\15b5b42e36a5e950f852c035e34db427756d5682\output\AndroidManifest.xml:21:5-23:60
@@ -88,7 +89,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Se
 		INJECTED from C:\Users\Sean\AndroidStudioProjects\Yum\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sean\AndroidStudioProjects\Yum\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sean\.android\build-cache\7fd37b12bcfd977bf4381d3131f4d1667875547c\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sean\.android\build-cache\076c5c88365485a5eaa5bf30524f8b0f9fb85f3c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sean\.android\build-cache\7fd37b12bcfd977bf4381d3131f4d1667875547c\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sean\.android\build-cache\ba469e0513f9e95c6aacb2fb4126b375e16c21db\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sean\.android\build-cache\15b5b42e36a5e950f852c035e34db427756d5682\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sean\.android\build-cache\5b187744e320a47e07a609448ff737cdfec015b9\output\AndroidManifest.xml:25:5-27:34
@@ -98,6 +100,6 @@ MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sean\
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sean\.android\build-cache\15f30b8e56e63da8296f9606b5ed3030889d6b6c\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sean\.android\build-cache\8e307762f8632b02d8289e9f9af5c5d7d1c4b8a7\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sean\.android\build-cache\7fd37b12bcfd977bf4381d3131f4d1667875547c\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sean\.android\build-cache\076c5c88365485a5eaa5bf30524f8b0f9fb85f3c\output\AndroidManifest.xml:24:9-31
 	android:name
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sean\.android\build-cache\7fd37b12bcfd977bf4381d3131f4d1667875547c\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sean\.android\build-cache\076c5c88365485a5eaa5bf30524f8b0f9fb85f3c\output\AndroidManifest.xml:23:9-47

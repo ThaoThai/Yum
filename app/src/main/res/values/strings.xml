@@ -15,13 +15,12 @@
     <string name="email_directive">Please enter your Email and Birthday</string>
     <string name="cont">Continue</string>
     <string name="motto">Your Body. Your Dinner. Your Choice.</string>
-    <string name="diet_directive">Please enter diet restrictions and your current weight. Let\'s start meal planning!</string>
+    <string name="diet_directive">Please select your diet restrictions and current weight. Let\'s start meal planning!</string>
     <string name="diet_restrict">Dietary Restrictions</string>
     <string name="weight">Current Weight</string>
     <string name="diet_header">Now for the Scary Part!</string>
     <string name="done">DONE</string>
     <string name="start">Let\'s get started!</string>
     <string name="cuisine_header">Can you smell what\'s cooking?</string>
-    <string name="cuisine_directive">Let\'s get dive in with culinary style!</string>
-    <string name="cuisine_prompt">Cuisines from around the World:</string>
+    <string name="cuisine_directive">Let\'s get dive in with culinary style! Please choose from the options below to get started!</string>
 </resources>

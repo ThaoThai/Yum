@@ -104,12 +104,12 @@
         "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reg_welcome.xml",
         "source": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\src\\main\\res\\layout\\reg_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
@@ -120,6 +120,10 @@
         "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
+        "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chip.xml",
+        "source": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\src\\main\\res\\layout\\chip.xml"
+    },
+    {
         "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
@@ -128,12 +132,12 @@
         "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reg_cuisine.xml",
         "source": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\src\\main\\res\\layout\\reg_cuisine.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
@@ -144,12 +148,12 @@
         "source": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reg_activity.xml",
         "source": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\src\\main\\res\\layout\\reg_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Sean\\.android\\build-cache\\7fd37b12bcfd977bf4381d3131f4d1667875547c\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\Sean\\AndroidStudioProjects\\Yum\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",

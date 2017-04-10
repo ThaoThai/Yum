@@ -6,7 +6,8 @@ package com.mobile.yum.registration;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.TextUtils;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.mobile.yum.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 /**
@@ -27,8 +31,11 @@ import com.mobile.yum.R;
 public class reg_DietFrag extends Fragment {
 
     reg_Activity _activity;
+    private ArrayList<String> restrictions = new ArrayList<>();
+    private HashMap<String, Boolean> hash = new HashMap<>();
     private int weight;
-    private String email;
+    RecyclerView v_options;
+    StaggeredAdapter optionsAdapter;
 
     public reg_DietFrag() {
         // Required empty public constructor
@@ -70,9 +77,22 @@ public class reg_DietFrag extends Fragment {
         View v = inflater.inflate(R.layout.diet_weight, container, false);
 
         Button doneButton = (Button) v.findViewById(R.id.done_button);
-        final EditText editText = (EditText) v.findViewById(R.id.editText);
         final EditText editText2 = (EditText) v.findViewById(R.id.editText2);
 
+        restrictions.add("blah");
+        restrictions.add("heh");
+        hash.put("blah",false);
+        hash.put("heh",false);
+
+
+        v_options = (RecyclerView) v.findViewById(R.id.v_options);
+        v_options.setHasFixedSize(true);
+        StaggeredGridLayoutManager options_lm = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
+        options_lm.setGapStrategy(StaggeredGridLayoutManager.GAP_HANDLING_NONE);
+        v_options.setLayoutManager(options_lm);
+
+        optionsAdapter = new StaggeredAdapter(this._activity, restrictions, hash);
+        v_options.setAdapter(optionsAdapter);
         doneButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -80,6 +100,8 @@ public class reg_DietFrag extends Fragment {
 
                 weight =  Integer.parseInt(editText2.getText().toString());
 
+                _activity._reg_contact.restrictions = optionsAdapter.getSelected();
+                _activity._reg_contact.loadRMap(optionsAdapter.getHash());
                 _activity._reg_contact.setWeight(weight);
                 //_activity.switchFrag("reg_Pass");
 
