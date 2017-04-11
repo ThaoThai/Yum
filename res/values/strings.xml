@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">RecipeFinder</string>
     <string name="ingredients_prompt">Exclude your ingredients</string>
+    <string name ="pref_previously_started"></string>
+    <string-array name="diet_array">
+        <item>Vegan</item>
+        <item>Ovo vegetarian</item>
+        <item>Lacto vegetarian</item>
+        <item>Pescetarians</item>
+        <item>Vegan</item>
+        <item>Paleo</item>
+        <item>Primal</item>
+        <item>Vegetarian</item>
+    </string-array>
 
 </resources>
