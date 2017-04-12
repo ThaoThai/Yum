@@ -9,8 +9,8 @@ import android.util.Log;
 
 public class UserDatabaseHelper extends SQLiteOpenHelper {
     // Need versioning in case database schema changes
-    public static final int DATABASE_VERSION = 2;
-    public static final String DATABASE_NAME = "UserManager.db";
+    public static final int DATABASE_VERSION = 3;
+    public static final String DATABASE_NAME = "UserInfo.db";
 
     public UserDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -23,12 +23,12 @@ public class UserDatabaseHelper extends SQLiteOpenHelper {
         command += UserDBContract.UserDBEntry._ID + " INTEGER PRIMARY KEY,";
         command += UserDBContract.UserDBEntry.COLUMN_NAME_LAST + " TEXT,";
         command += UserDBContract.UserDBEntry.COLUMN_NAME_FIRST + " TEXT,";
-        command += UserDBContract.UserDBEntry.COLUMN_NAME_EMAIL + " TEXT";
-        command += UserDBContract.UserDBEntry.COLUMN_NAME_B_YEAR + " INTEGER";
-        command += UserDBContract.UserDBEntry.COLUMN_NAME_B_MONTH + " INTEGER";
-        command += UserDBContract.UserDBEntry.COLUMN_NAME_B_DAY + " INTEGER";
+        command += UserDBContract.UserDBEntry.COLUMN_NAME_EMAIL + " TEXT,";
+        command += UserDBContract.UserDBEntry.COLUMN_NAME_B_YEAR + " INTEGER,";
+        command += UserDBContract.UserDBEntry.COLUMN_NAME_B_MONTH + " INTEGER,";
+        command += UserDBContract.UserDBEntry.COLUMN_NAME_B_DAY + " INTEGER,";
         command += UserDBContract.UserDBEntry.COLUMN_NAME_DIET + " TEXT";
-        command += ")";
+        command += ");";
 
         db.execSQL(command);
 

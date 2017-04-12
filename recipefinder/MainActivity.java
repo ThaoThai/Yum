@@ -3,6 +3,7 @@ package thaothai.example.com.recipefinder;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentActivity;
@@ -15,6 +16,8 @@ public class MainActivity extends FragmentActivity implements ReceipeListFragmen
     ReceipeListFragment _receipeListFragment;
     RecipeViewFragment _recipeViewFragment;
     CheckListFragment _checkListFragment;
+    ProfileFrag _profileFrag;
+    SQLiteDatabase _db;
     int recipe_id;
     public static final String PREFS_NAME = "MyPrefsFile";
     String title;
@@ -28,16 +31,6 @@ public class MainActivity extends FragmentActivity implements ReceipeListFragmen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recipe_main);
 
-        SharedPreferences settings = getSharedPreferences(MainActivity.PREFS_NAME, 0);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putBoolean("firstExecuted",true);
-        editor.commit();
-
-        Intent intent = new Intent();
-        intent.setClass(MainActivity.this, RegisterActivity.class);
-        startActivity(intent);
-        MainActivity.this.finish();
-
         // Initialize the fragments if they do not exist
         if (_receipeListFragment == null) {
             _receipeListFragment = new ReceipeListFragment();
@@ -50,6 +43,11 @@ public class MainActivity extends FragmentActivity implements ReceipeListFragmen
         if (_checkListFragment == null) {
             _checkListFragment = new CheckListFragment();
             _checkListFragment.setActivity(this);
+        }
+
+        if(_profileFrag == null){
+            _profileFrag = new ProfileFrag();
+            _profileFrag.setActivity(this);
         }
         // Add the initial fragment
         FragmentManager fm = getSupportFragmentManager();
@@ -68,6 +66,9 @@ public class MainActivity extends FragmentActivity implements ReceipeListFragmen
         }else if(newFragment=="check list"){
             FragmentManager fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.recipe_main, _checkListFragment).commit();
+        }else if(newFragment == "profile"){
+            FragmentManager fm = getSupportFragmentManager();
+            fm.beginTransaction().replace(R.id.recipe_main, _profileFrag).commit();
         }
 
     }
@@ -92,4 +93,6 @@ public class MainActivity extends FragmentActivity implements ReceipeListFragmen
         args.putString(key, data);
         _checkListFragment.setArguments(args);
     }
+
+
 }

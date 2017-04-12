@@ -3,9 +3,6 @@ package thaothai.example.com.recipefinder.user_Data;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * Created by Sean on 3/6/2017.
- */
 
 public class User {
     public int icon;
@@ -15,16 +12,6 @@ public class User {
     public String email;
     public int[] birthday;
     public String diet;
-
-    /*
-    create separate database tables for cuisines and restrictions,
-    stored with the selected "chips" first and store only the number
-    of "chips" selected. If either "list" is added or subtracted from,
-    modify the "number selected" variable accordingly and adjust the array
-
-    birthday can be left as three separate ints in the database, similar to fname/lname
-
-     */
 
     public User(){
         super();
