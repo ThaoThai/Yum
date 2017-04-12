@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="bday">Birthday:</string>
+    <string name="diet">Diets:</string>
+    <string name="email">Email:</string>
+    <string name="userName">User Name</string>
+</resources>

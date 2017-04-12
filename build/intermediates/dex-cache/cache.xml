@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sean\.android\build-cache\b8e24439f1e1fd1adc395567d0c4c3897124e9ec\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\Sean\Downloads\Profile\app\build\intermediates\pre-dexed\debug\classes_cd74df7c5e5aa43f9e57407b3bd7fc2568491439.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sean\.android\build-cache\0833ad08cb1f2e08a56dba641f72001baa84b080\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\Sean\Downloads\Profile\app\build\intermediates\pre-dexed\debug\classes_055e1fb972f598488e3c61154db45bedfe24e5a3.jar" />
+    </item>
+
+</items>
