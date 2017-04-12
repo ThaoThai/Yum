@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/header_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_emo_evil" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_img"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_action_edit" />
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:text="@string/userName"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/user_profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:text="@string/userName"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:background="@android:color/darker_gray">
+
+            <RelativeLayout
+                android:id="@+id/email_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/email_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/email_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/email_prompt"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/birthday_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/birthday_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bday"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/bday_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/birthday_prompt"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/diet_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/diet_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diet"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/diet_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/diet_prompt"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

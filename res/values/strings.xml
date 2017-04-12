@@ -3,7 +3,8 @@
     <string name="ingredients_prompt">Exclude your ingredients</string>
     <string name ="pref_previously_started"></string>
     <string-array name="diet_array">
-        <item>Vegan</item>
+        <item>Choose Diet Choice</item>
+        <item>None</item>
         <item>Ovo vegetarian</item>
         <item>Lacto vegetarian</item>
         <item>Pescetarians</item>
@@ -12,5 +13,12 @@
         <item>Primal</item>
         <item>Vegetarian</item>
     </string-array>
+
+    <string name="app_name">Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="bday">Birthday:</string>
+    <string name="diet">Diets:</string>
+    <string name="email">Email:</string>
+    <string name="userName">User Name</string>
 
 </resources>
